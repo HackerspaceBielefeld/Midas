@@ -16,7 +16,7 @@ Ein Kassen system für den Hackerspace Bielefeld. Es soll auf der einen seite ei
 * PS2-Barcode-Scanner
 
 ## Pinbelegung
-
+TODO
 ## Probleme
 ### SQLSTATE[HY000] [14] unable to open database file
 noch kein install.py ausgeführt
