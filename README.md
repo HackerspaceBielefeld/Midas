@@ -10,6 +10,37 @@ Ein Kassen system für den Hackerspace Bielefeld. Es soll auf der einen seite ei
 - [ ] storno
 - [ ] aufladen mit Barcode
 
+## Installation
+### 1. config
+im raspi-config, den spi treiber aktivieren
+### 2. modprobe
+mit 
+```
+modprobe spi_bcm2708
+```
+oder
+```
+modprobe spi_bcm2835
+```
+testen ob der SPI treiber läuft
+### 3. apt	
+Pakete nach installieren
+```
+sudo -i
+apt install git-core python-dev
+apt install python-spidev python-sqlite
+apt install python-pip
+
+pip install pi-rc522
+```
+### 4. test
+Testen ob python alles übernommen hat in python
+```
+import spidev
+```
+
+Es muss eine /dev/spidev0.0 datei existieren
+
 ## Hardware
 * RaspPi 1 oder besser
 * TFT 1,8 Zoll SPI Display
